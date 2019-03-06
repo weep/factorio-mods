@@ -67,7 +67,6 @@ module.exports = {
     "time": 1,
     "productivity": 10,
     "ingredients": {
-      "heavy-oil": 10
     }
   },
   "automation-science-pack": {
@@ -115,6 +114,17 @@ module.exports = {
       "rail": 30
     },
     "result_count": 3
+  },
+  "flying-robot-frame": {
+    "time": 20,
+    "productivity": 40,
+    "ingredients": {
+      "battery": 2,
+      "electric-engine-unit": 1,
+      "electronic-circuit": 3,
+      "steel-plate": 1,
+    },
+    "result_count": 1
   },
   "utility-science-pack": {
     "time": 21,
@@ -171,6 +181,14 @@ module.exports = {
     "productivity": 40,
     "ingredients": {
       "copper-plate": 1
+    },
+    "result_count": 2
+  },
+  "iron-stick": {
+    "time": 0.5,
+    "productivity": 40,
+    "ingredients": {
+      "iron-plate": 1
     },
     "result_count": 2
   },
@@ -254,6 +272,16 @@ module.exports = {
       "pipe": 2
     }
   },
+  "rail": {
+    "time": 0.5,
+    "productivity": 40,
+    "ingredients": {
+      "iron-stick": 1,
+      "steel-plate": 1,
+      "stone": 1
+    },
+    "result_count": 2
+  },
   "electric-engine-unit": {
     "category": "crafting-with-fluid",
     "time": 10,
@@ -282,6 +310,14 @@ module.exports = {
     }
   },
   "speed-module": {
+    "time": 15,
+    "productivity": 0,
+    "ingredients": {
+      "advanced-circuit": 5,
+      "electronic-circuit": 5
+    }
+  },
+  "productivity-module": {
     "time": 15,
     "productivity": 0,
     "ingredients": {
