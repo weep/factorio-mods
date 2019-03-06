@@ -53,7 +53,7 @@ module.exports = {
   },
   "sulfuric-acid": {
     "category": "chemistry",
-    "time": 0,
+    "time": 1,
     "productivity": 30,
     "ingredients": {
       "sulfur": 5,
@@ -64,11 +64,13 @@ module.exports = {
   },
   "lubricant": {
     "category": "chemistry",
-    "time": 0,
-    "productivity": 0,
-    "ingredients": {}
+    "time": 1,
+    "productivity": 10,
+    "ingredients": {
+      "heavy-oil": 10
+    }
   },
-  "science-pack-1": {
+  "automation-science-pack": {
     "time": 5,
     "productivity": 40,
     "ingredients": {
@@ -76,7 +78,7 @@ module.exports = {
       "iron-gear-wheel": 1
     }
   },
-  "science-pack-2": {
+  "logistic-science-pack": {
     "time": 6,
     "productivity": 40,
     "ingredients": {
@@ -84,14 +86,15 @@ module.exports = {
       "transport-belt": 1
     }
   },
-  "science-pack-3": {
-    "time": 12,
+  "chemical-science-pack": {
+    "time": 24,
     "productivity": 40,
     "ingredients": {
-      "advanced-circuit": 1,
-      "engine-unit": 1,
-      "electric-mining-drill": 1
-    }
+      "advanced-circuit": 3,
+      "engine-unit": 2,
+      "solid-fuel": 1
+    },
+    "result_count": 2
   },
   "military-science-pack": {
     "time": 10,
@@ -99,34 +102,34 @@ module.exports = {
     "ingredients": {
       "piercing-rounds-magazine": 1,
       "grenade": 1,
-      "gun-turret": 1
+      "stone-wall": 2
     },
     "result_count": 2
   },
   "production-science-pack": {
-    "time": 14,
+    "time": 21,
     "productivity": 40,
     "ingredients": {
-      "electric-engine-unit": 1,
-      "electric-furnace": 1
+      "electric-furnace": 1,
+      "productivity-module": 1,
+      "rail": 30
     },
-    "result_count": 2
+    "result_count": 3
   },
-  "high-tech-science-pack": {
-    "time": 14,
+  "utility-science-pack": {
+    "time": 21,
     "productivity": 40,
     "ingredients": {
-      "battery": 1,
-      "processing-unit": 3,
-      "speed-module": 1,
-      "copper-cable": 30
+      "flying-robot-frame": 1,
+      "low-density-structure": 3,
+      "processing-unit": 2,
     },
-    "result_count": 2
+    "result_count": 3
   },
   "copper-plate": {
     "category": "smelting",
     "order": 4,
-    "time": 3.5,
+    "time": 3.2,
     "productivity": 20,
     "ingredients": {
       "copper-ore": 1
@@ -135,7 +138,7 @@ module.exports = {
   "iron-plate": {
     "category": "smelting",
     "order": 3,
-    "time": 3.5,
+    "time": 3.2,
     "productivity": 20,
     "ingredients": {
       "iron-ore": 1
@@ -143,14 +146,14 @@ module.exports = {
   },
   "steel-plate": {
     "category": "smelting",
-    "time": 17.5,
+    "time": 16,
     "productivity": 20,
     "ingredients": {
       "iron-plate": 5
     }
   },
   "stone-brick": {
-    "time": 3.5,
+    "time": 3.2,
     "productivity": 20,
     "ingredients": {
       "stone": 2
@@ -183,7 +186,7 @@ module.exports = {
   },
   "battery": {
     "category": "chemistry",
-    "time": 5,
+    "time": 4,
     "productivity": 30,
     "ingredients": {
       "sulfuric-acid": 20,
@@ -269,33 +272,6 @@ module.exports = {
       "coal": 10
     }
   },
-  "gun-turret": {
-    "time": 8,
-    "productivity": 0,
-    "ingredients": {
-      "iron-gear-wheel": 10,
-      "copper-plate": 10,
-      "iron-plate": 20
-    }
-  },
-  "electric-mining-drill": {
-    "time": 2,
-    "productivity": 0,
-    "ingredients": {
-      "electronic-circuit": 3,
-      "iron-gear-wheel": 5,
-      "iron-plate": 10
-    }
-  },
-  "assembling-machine-1": {
-    "time": 0.5,
-    "productivity": 0,
-    "ingredients": {
-      "electronic-circuit": 3,
-      "iron-gear-wheel": 5,
-      "iron-plate": 9
-    }
-  },
   "electric-furnace": {
     "time": 5,
     "productivity": 0,
@@ -378,18 +354,18 @@ module.exports = {
   },
   "solid-fuel": {
     "category": "chemistry",
-    "time": 3,
+    "time": 2,
     "productivity": 30,
     "ingredients": {
       "light-oil": 10
     }
   },
   "low-density-structure": {
-    "time": 30,
+    "time": 20,
     "productivity": 40,
     "ingredients": {
-      "steel-plate": 10,
-      "copper-plate": 5,
+      "steel-plate": 2,
+      "copper-plate": 20,
       "plastic-bar": 5
     }
   },
