@@ -66,8 +66,7 @@ module.exports = {
     "category": "chemistry",
     "time": 1,
     "productivity": 10,
-    "ingredients": {
-    }
+    "ingredients": {}
   },
   "automation-science-pack": {
     "time": 5,
@@ -160,6 +159,13 @@ module.exports = {
     "productivity": 20,
     "ingredients": {
       "iron-plate": 5
+    }
+  },
+  "stone-wall": {
+    "time": 0.5,
+    "productivity": 20,
+    "ingredients": {
+      "stone-brick": 5
     }
   },
   "stone-brick": {
